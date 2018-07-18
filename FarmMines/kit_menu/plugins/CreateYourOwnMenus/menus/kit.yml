@@ -1,0 +1,246 @@
+title: §8(§4Kits§8)
+size: 45
+contents:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6Starter Kit
+      lore:
+      - "§/§m§e§n§u§ §g§r§a§b§ §@§p§ §s§t§a§r§t§e§r§_§k§i§t§\r§/§c§l§o§s§e§\r§8=================="
+      - §7Starter Kit for
+      - §aFarmMines§7!
+      - §8==================
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_INGOT
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6VIP Kit
+      lore:
+      - "§/§r§e§q§u§i§r§e§p§e§r§m§i§s§s§i§o§n§ §t§e§c§h§.§k§i§t§.§v§i§p§\r§/§m§e§\
+        n§u§ §g§r§a§b§ §@§p§ §v§i§p§_§k§i§t§\r§/§c§l§o§s§e§\r§8==================="
+      - §7Gives you the
+      - §6VIP Kit§7!
+      - §8===================
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_INGOT
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6VIP+ Kit
+      lore:
+      - "§/§r§e§q§u§i§r§e§p§e§r§m§i§s§s§i§o§n§ §t§e§c§h§.§k§i§t§.§v§i§p§+§\r§/§m§\
+        e§n§u§ §g§r§a§b§ §@§p§ §v§i§p§_§+§_§k§i§t§\r§/§c§l§o§s§e§\r§8==================="
+      - §7Gives you the
+      - §6VIP+ Kit§7!
+      - §8===================
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6MVP Kit
+      lore:
+      - "§/§r§e§q§u§i§r§e§p§e§r§m§i§s§s§i§o§n§ §t§e§c§h§.§k§i§t§.§m§v§p§\r§/§m§e§\
+        n§u§ §g§r§a§b§ §@§p§ §m§v§p§_§k§i§t§\r§/§c§l§o§s§e§\r§8==================="
+      - §7Gives you the
+      - §6MVP Kit§7!
+      - §8===================
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '27':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '37':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '39':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '40':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '41':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '42':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '43':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
+  '44':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ' '
