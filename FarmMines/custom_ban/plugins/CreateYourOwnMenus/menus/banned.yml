@@ -1,0 +1,73 @@
+title: §8(§4Ban User§8)§f
+size: 9
+contents:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_ORE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cX-Ray
+      lore:
+      - "§/§s§c§o§r§e§b§o§a§r§d§ §p§l§a§y§e§r§s§ §t§a§g§ §@§p§ §a§d§d§ §b§1§\r§/§\
+        c§l§o§s§e§\r"
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: FEATHER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cFly Hacks
+      lore:
+      - "§/§s§c§o§r§e§b§o§a§r§d§ §p§l§a§y§e§r§s§ §t§a§g§ §@§p§ §a§d§d§ §b§2§\r§/§\
+        c§l§o§s§e§\r"
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cKill Aura
+      lore:
+      - "§/§s§c§o§r§e§b§o§a§r§d§ §p§l§a§y§e§r§s§ §t§a§g§ §@§p§ §a§d§d§ §b§3§\r§/§\
+        c§l§o§s§e§\r"
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cGreifing
+      lore:
+      - "§/§s§c§o§r§e§b§o§a§r§d§ §p§l§a§y§e§r§s§ §t§a§g§ §@§p§ §a§d§d§ §b§4§\r§/§\
+        c§l§o§s§e§\r"
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: TNT
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cNuker
+      lore:
+      - "§/§s§c§o§r§e§b§o§a§r§d§ §p§l§a§y§e§r§s§ §t§a§g§ §@§p§ §a§d§d§ §b§5§\r§/§\
+        c§l§o§s§e§\r"
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: SUGAR
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cSpeed / No-Clip / Phase Hacks
+      lore:
+      - "§/§s§c§o§r§e§b§o§a§r§d§ §p§l§a§y§e§r§s§ §t§a§g§ §@§p§ §a§d§d§ §b§6§\r§/§\
+        c§l§o§s§e§\r"
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: BARRIER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cKick User
+      lore:
+      - "§/§s§c§o§r§e§b§o§a§r§d§ §p§l§a§y§e§r§s§ §t§a§g§ §@§p§ §a§d§d§ §b§7§\r§/§\
+        c§l§o§s§e§\r"
