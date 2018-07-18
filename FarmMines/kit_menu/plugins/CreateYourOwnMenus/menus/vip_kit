@@ -1,0 +1,68 @@
+title: vip_kit
+size: 9
+contents:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2The V.I.P Cuttin' Axe
+      enchants:
+        DIG_SPEED: 3
+        DAMAGE_ALL: 2
+        DURABILITY: 10
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2The V.I.P Minin' Pick
+      enchants:
+        DIG_SPEED: 3
+        DURABILITY: 10
+        LOOT_BONUS_BLOCKS: 2
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2The V.I.P Crown
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 3
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2The V.I.P Sturdy Shirt
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 3
+        THORNS: 2
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §2The V.I.P Green pants?
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 3
+        THORNS: 3
+      color:
+        ==: Color
+        RED: 111
+        BLUE: 26
+        GREEN: 161
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2The V.I.P Fancy boots
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 3
