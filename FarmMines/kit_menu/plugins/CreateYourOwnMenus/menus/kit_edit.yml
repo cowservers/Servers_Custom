@@ -1,0 +1,39 @@
+title: §8(§4Edit Kits§8)
+size: 27
+contents:
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Starter Kit
+      lore:
+      - "§/§m§e§n§u§ §e§d§i§t§ §@§p§ §s§t§a§r§t§e§r§_§k§i§t§\r"
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_INGOT
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: VIP Kit
+      lore:
+      - "§/§m§e§n§u§ §e§d§i§t§ §@§p§ §v§i§p§_§k§i§t§\r"
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_INGOT
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: VIP+ Kit
+      lore:
+      - "§/§m§e§n§u§ §e§d§i§t§ §@§p§ §v§i§p§_§+§_§k§i§t§\r"
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: MVP Kit
+      lore:
+      - "§/§m§e§n§u§ §e§d§i§t§ §@§p§ §m§v§p§_§k§i§t§\r"
