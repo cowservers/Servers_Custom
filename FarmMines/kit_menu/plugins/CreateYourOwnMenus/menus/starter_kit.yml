@@ -1,0 +1,72 @@
+title: starter_kit
+size: 9
+contents:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6Starter Pickaxe
+      lore:
+      - §8==================
+      - §7Custom Item made for
+      - §aFarmMines§7 by Tech!
+      - §8==================
+      internal: H4sIAAAAAAAAAF3IwQpAQBAG4P8kXMjjuPIemhjbZsxodlPeXrmQ7/jVQIV6IB05ZberBFCg2aPy7LTmPmVTRvvGIaRb+k5wOlnQvTMbyWTO34tu+r9gsjx3A0jUHuyHAAAA
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6Basic Food
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §6Starter Hat
+      color:
+        ==: Color
+        RED: 71
+        BLUE: 82
+        GREEN: 79
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §6Starter Chestplate
+      color:
+        ==: Color
+        RED: 71
+        BLUE: 82
+        GREEN: 79
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §6Starter Pants
+      color:
+        ==: Color
+        RED: 71
+        BLUE: 82
+        GREEN: 79
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §6Starter Boots
+      color:
+        ==: Color
+        RED: 71
+        BLUE: 82
+        GREEN: 79
