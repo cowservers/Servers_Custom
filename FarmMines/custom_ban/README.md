@@ -2,7 +2,7 @@
 Ban System Developed for cowcapital.minehug.gg and farmmines.minehut.gg. Forums are cowcapital.forums.gg
 
 
-#Installation
+**Installation**
 Copy Files to Server
 
 Import Schematic Via WorldEdit to your Spawn Chunks
