@@ -1,0 +1,72 @@
+options:
+	owner1: techclubce
+	owner2: Cowinthehole333
+	Prefix: &8[&4Cowmunist&8] &c
+	Version: 1.5
+	NoPermission:You don't have the permission to execute this command.
+
+command /rank [<offline player>] [<text>] [<text>] [<text>]:
+	permission: tech.admin.rank
+	permission message: &cNo Permission.
+	trigger:
+		set {_rankplayer} to "%arg 1%"
+		if {_rankplayer} is "{@owner1}":
+			if player has permission "tech.admin.rank.staff":
+				open virtual chest with 2 rows named "&b&lSelect Rank: %{_rankplayer}%" to player
+				format gui slot 0 of player with red wool named "&cOwner" to close:
+					execute player command "/manuadd %{_rankplayer}% Owner"
+					message "{@Prefix}&b%{_rankplayer}% &chas been given rank: &bOwner&c."
+					stop trigger
+				format gui slot 1 of player with green wool named "&cAdministrator" to close:
+					execute player command "/manuadd %{_rankplayer}% Admin"
+					message "{@Prefix}&b%{_rankplayer}% &chas been given rank: &bAdministrator&c."
+					stop trigger
+				format gui slot 2 of player with blue wool named "&cModerator" to close:
+					execute player command "/manuadd %{_rankplayer}% Moderator"
+					message "{@Prefix}&b%{_rankplayer}% &chas been given rank: &bModerator&c."
+					stop trigger
+				format gui slot 3 of player with yellow wool named "&cBuilder" to close:
+					execute player command "/manuadd %{_rankplayer}% Builder"
+					message "{@Prefix}&b%{_rankplayer}% &chas been given rank: &bBuilder&c."
+					stop trigger
+			else:
+				message "{@Prefix}You may not change that player's rank."
+		else if {_rankplayer} is "{@owner2}":
+			if player has permission "tech.admin.rank.staff":
+				open virtual chest with 2 rows named "&b&lSelect Rank: %{_rankplayer}%" to player
+				format gui slot 0 of player with red wool named "&cOwner" to close:
+					execute player command "/manuadd %{_rankplayer}% Owner"
+					message "{@Prefix}&b%{_rankplayer}% &chas been given rank: &bOwner&c."
+					stop trigger
+				format gui slot 1 of player with green wool named "&cAdministrator" to close:
+					execute player command "/manuadd %{_rankplayer}% Admin"
+					message "{@Prefix}&b%{_rankplayer}% &chas been given rank: &bAdministrator&c."
+					stop trigger
+				format gui slot 2 of player with blue wool named "&cModerator" to close:
+					execute player command "/manuadd %{_rankplayer}% Moderator"
+					message "{@Prefix}&b%{_rankplayer}% &chas been given rank: &bModerator&c."
+					stop trigger
+				format gui slot 3 of player with yellow wool named "&cBuilder" to close:
+					execute player command "/manuadd %{_rankplayer}% Builder"
+					message "{@Prefix}&b%{_rankplayer}% &chas been given rank: &bBuilder&c."
+					stop trigger
+			else:
+				message "{@Prefix}You may not change that player's rank."
+		else:
+			open virtual chest with 2 rows named "&b&lSelect Rank: %{_rankplayer}%" to player
+			format gui slot 0 of player with red wool named "&cOwner" to close:
+				execute player command "/manuadd %{_rankplayer}% Owner"
+				message "{@Prefix}&b%{_rankplayer}% &chas been given rank: &bOwner&c."
+				stop trigger
+			format gui slot 1 of player with green wool named "&cAdministrator" to close:
+				execute player command "/manuadd %{_rankplayer}% Admin"
+				message "{@Prefix}&b%{_rankplayer}% &chas been given rank: &bAdministrator&c."
+				stop trigger
+			format gui slot 2 of player with blue wool named "&cModerator" to close:
+				execute player command "/manuadd %{_rankplayer}% Moderator"
+				message "{@Prefix}&b%{_rankplayer}% &chas been given rank: &bModerator&c."
+				stop trigger
+			format gui slot 3 of player with yellow wool named "&cBuilder" to close:
+				execute player command "/manuadd %{_rankplayer}% Builder"
+				message "{@Prefix}&b%{_rankplayer}% &chas been given rank: &bBuilder&c."
+				stop trigger
