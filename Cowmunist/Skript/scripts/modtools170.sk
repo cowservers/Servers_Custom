@@ -1,10 +1,10 @@
-# modtools v.1.7.0
+# modtools version 1.7.1 - change: added /chat clear
 
 options:
 	owner1: techclubce
 	owner2: Cowinthehole333
 	Prefix: &8[&4Cowmunist&8] &c
-	Version: 1.7.0
+	Version: 1.7.1
 	NoPermission:You don't have the permission to execute this command.
 	
 variables:
@@ -28,11 +28,18 @@ command /chat [<offline player>] [<text>] [<text>] [<text>]:
 		if arg-1 is "mute":
 			set {chatmute} to 1
 			message "{@Prefix}Chat has been &amuted&c."
+			broadcast "{@Prefix}Chat has been &amuted&c."
 			stop trigger
-		if arg-1 is "unmute":
+		else if arg-1 is "unmute":
 			set {chatmute} to 0
 			message "{@Prefix}Chat has been &aunmuted&c."
+			broadcast "{@Prefix}Chat has been &aunmuted&c."
 			stop trigger
+		else if arg-a is "clear"
+			loop 100 times:
+				broadcast " "
+			broadcast "{@Prefix}Chat was cleared."
+		
 		else:
 			message "&cUsage: &b/chat mute&c or &b/chat unmute&c."
 			stop trigger
