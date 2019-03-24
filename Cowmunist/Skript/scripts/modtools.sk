@@ -1,0 +1,92 @@
+options:
+	owner1: techclubce
+	owner2: Cowinthehole333
+	Prefix: &8[&4Cowmunist&8] &c
+
+variables:
+	{chatmute} = 0
+
+on chat:
+	if {chatmute} is 1:
+		player doesn't have permission "tech.bypass.chat":
+			message "{@Prefix}Chat is currently muted!"
+			cancel event
+
+command /chat [<offline player>] [<text>] [<text>] [<text>]:			
+	trigger:
+		if arg-1 is "mute":
+			set {chatmute} to 1
+			message "{@Prefix}Chat has been &amuted&c."
+			stop trigger
+		if arg-1 is "unmute":
+			set {chatmute} to 0
+			message "{@Prefix}Chat has been &aunmuted&c."
+			stop trigger
+		else:
+			message "&cUsage: &b/chat mute&c or &b/chat unmute&c."
+			stop trigger
+
+
+
+command /mutechat:
+	trigger:
+		set {chatmute} to 1
+		message "{@Prefix}Chat has been &amuted&c."
+		stop trigger
+
+command /unmutechat:
+	trigger:
+		set {chatmute} to 0
+		message "{@Prefix}Chat has been &aunmuted&c."
+		stop trigger
+		
+command /sban [<offline player>] [<text>]:
+	aliases: /stempban
+	permission: tech.admin.punnish.ban
+	permission message: {@Prefix}No Permission.
+	trigger:
+		if arg-1 isn't set:
+			message "{@Prefix}You need to specify a player to ban!"
+			
+		else:	
+			if arg-1 is "{@owner1}":
+				message "{@Prefix}You may not ban this player!"
+			
+			else:
+				if arg-1 is "{@owner2}":
+					message "{@Prefix}You may not ban this player!"
+
+				else:
+					open virtual chest with 3 rows named "&b&lSelect Ban Type" to player
+					format gui slot 12 of player with red wool  named "&cSilent Ban" to close:
+						open virtual chest with 2 rows named "&b&lSelect Ban Reason - Silent" to player
+						format gui slot 0 of player with diamond ore named "&cXray" to close then run player command "/advancedban:tempban %arg 1% 15d -s Xray. Appeal at cowservers.namelesshosting.com"
+						format gui slot 1 of player with feather named "&cFly" to close then run player command "/advancedban:tempban %arg 1% 7d -s Fly Hacks. Appeal at cowservers.namelesshosting.com"
+						format gui slot 2 of player with diamond sword named "&cKill Aura" to close then run player command "u/ban %arg 1% 23d -s Kill Aura. Appeal at cowservers.namelesshosting.com"
+						format gui slot 3 of player with iron pickaxe named "&cGreifing" to close then run player command "u/ban %arg 1% 50y -s Greifing. Appeal at cowservers.namelesshosting.com"
+						format gui slot 4 of player with tnt  named "&cNuker" to close then run player command "/advancedban:tempban %arg 1% 30d -s Nuker. Appeal at cowservers.namelesshosting.com"
+						format gui slot 5 of player with iron shovel  named "&cNuker" to close then run player command "/advancedban:tempban %arg 1% 22d -s Excavation Hacks. Appeal at cowservers.namelesshosting.com"
+						format gui slot 6 of player with cactus  named "&cDerp Hacks TEMP ITEM ID" to close then run player command "/advancedban:tempban %arg 1% 22d -s Derp. Appeal at cowservers.namelesshosting.com"
+						format gui slot 7 of player with redstone  named "&cStaff Player Disrespect" to close then run player command "/advancedban:tempban %arg 1% 30d -s Staff Player Disrespect. Appeal at cowservers.namelesshosting.com"
+						format gui slot 8 of player with sugar  named "&cSpeed / Phase / NoClip" to close then run player command "/advancedban:tempban %arg 1% 30d -s Speed / Phase / NoClip Hacks. Appeal at cowservers.namelesshosting.com"
+						format gui slot 9 of player with dirt  named "&cChat Bypass" to close then run player command "/advancedban:tempban %arg 1% 30d -s Chat Bypass. Appeal at cowservers.namelesshosting.com"
+						format gui slot 10 of player with bedrock  named "&cPerm Ban" to close then run player command "/advancedban:tempban %arg 1% 50y -s Perm Ban. Appeal at cowservers.namelesshosting.com"
+						format gui slot 11 of player with barrier  named "&cKick %arg 1%" to close then run player command "/kick %arg 1% 1s -s Kicked By A Staff Member."
+						format gui slot 12 of player with glass pane  named "&cComprimised" to close then run player command "/advancedban:tempban %arg 1% 15d -s Xray. Appeal at cowservers.namelesshosting.com"
+						stop trigger
+					format gui slot 14 of player with green wool  named "&cPublic Ban" to close:
+						open virtual chest with 2 rows named "&b&lSelect Ban Reason - Public" to player
+						format gui slot 0 of player with diamond ore named "&cXray" to close then run player command "/advancedban:tempban %arg 1% 15d Xray. Appeal at cowservers.namelesshosting.com"
+						format gui slot 1 of player with feather named "&cFly" to close then run player command "/advancedban:tempban %arg 1% 7d Fly Hacks. Appeal at cowservers.namelesshosting.com"
+						format gui slot 2 of player with diamond sword named "&cKill Aura" to close then run player command "u/ban %arg 1% 23d Kill Aura. Appeal at cowservers.namelesshosting.com"
+						format gui slot 3 of player with iron pickaxe named "&cGreifing" to close then run player command "u/ban %arg 1% 50y Greifing. Appeal at cowservers.namelesshosting.com"
+						format gui slot 4 of player with tnt  named "&cNuker" to close then run player command "/advancedban:tempban %arg 1% 30d Nuker. Appeal at cowservers.namelesshosting.com"
+						format gui slot 5 of player with iron shovel  named "&cNuker" to close then run player command "/advancedban:tempban %arg 1% 22d Excavation Hacks. Appeal at cowservers.namelesshosting.com"
+						format gui slot 6 of player with cactus  named "&cDerp Hacks TEMP ITEM ID" to close then run player command "/advancedban:tempban %arg 1% 22d Derp. Appeal at cowservers.namelesshosting.com"
+						format gui slot 7 of player with redstone  named "&cStaff Player Disrespect" to close then run player command "/advancedban:tempban %arg 1% 30d Staff Player Disrespect. Appeal at cowservers.namelesshosting.com"
+						format gui slot 8 of player with sugar  named "&cSpeed / Phase / NoClip" to close then run player command "/advancedban:tempban %arg 1% 30d Speed / Phase / NoClip Hacks. Appeal at cowservers.namelesshosting.com"
+						format gui slot 9 of player with dirt  named "&cChat Bypass" to close then run player command "/advancedban:tempban %arg 1% 30d Chat Bypass. Appeal at cowservers.namelesshosting.com"
+						format gui slot 10 of player with bedrock  named "&cPerm Ban" to close then run player command "/advancedban:tempban %arg 1% 86400mo Perm Ban. Appeal at cowservers.namelesshosting.com"
+						format gui slot 11 of player with barrier  named "&cKick %arg 1%" to close then run player command "/kick %arg 1% 1s Kicked By A Staff Member."
+						format gui slot 12 of player with glass pane  named "&cComprimised" to close then run player command "/advancedban:tempban %arg 1% 86400mo Comprimised. Appeal at cowservers.namelesshosting.com"
+						stop trigger
