@@ -1,0 +1,41 @@
+options:
+	owner1: techclubce
+	owner2: Cowinthehole333
+	Prefix: &8[&4Cowmunist&8] &c
+
+variables:
+	{chatmute} = 0
+
+on chat:
+	if {chatmute} is 1:
+		player doesn't have permission "tech.bypass.chat":
+			message "{@Prefix}Chat is currently muted!"
+			cancel event
+
+command /chat [<offline player>] [<text>] [<text>] [<text>]:			
+	trigger:
+		if arg-1 is "mute":
+			set {chatmute} to 1
+			message "{@Prefix}Chat has been &amuted&c."
+			stop trigger
+		if arg-1 is "unmute":
+			set {chatmute} to 0
+			message "{@Prefix}Chat has been &aunmuted&c."
+			stop trigger
+		else:
+			message "&cUsage: &b/chat mute&c or &b/chat unmute&c."
+			stop trigger
+
+
+
+command /mutechat:
+	trigger:
+		set {chatmute} to 1
+		message "{@Prefix}Chat has been &amuted&c."
+		stop trigger
+
+command /unmutechat:
+	trigger:
+		set {chatmute} to 0
+		message "{@Prefix}Chat has been &aunmuted&c."
+		stop trigger
