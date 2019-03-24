@@ -1,0 +1,25 @@
+options:
+	owner1: techclubce
+	owner2: Cowinthehole333
+	Prefix: &8[&4Cowmunist&8] &c
+
+command /sban [<offline player>] [<text>]:
+	aliases: /stempban
+	permission: tech.admin.punnish.ban
+	permission message: {@Prefix}No Permission.
+	trigger:
+		if arg-1 isn't set:
+			message "{@Prefix}You need to specify a player to ban!"
+			
+		else:	
+			if arg-1 is "{@owner1}":
+				message "{@Prefix}You may not ban this player!"
+			
+			else:
+				if arg-1 is "{@owner2}":
+					message "{@Prefix}You may not ban this player!"
+
+				else:
+					open virtual chest with 3 rows named "&b&lSelect Ban Type" to player
+					format gui slot 12 of player with red wool  named "&cSilent Ban" to close then run player command "/sbangui %arg 1% s"
+					format gui slot 14 of player with green wool  named "&cPublic Ban" to close then run player command "/sbangui %arg 1% p"
